@@ -1,0 +1,12 @@
+
+.header{
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #ffffff), color-stop(0.51, #d1d1d1), color-stop(0.50, #dbdbdb), color-stop(0.00, #dcdcdc));
+background: -webkit-linear-gradient(top, #dcdcdc 0%, #dbdbdb 50%, #d1d1d1 51%, #ffffff 100%);
+background: -moz-linear-gradient(top, #dcdcdc 0%, #dbdbdb 50%, #d1d1d1 51%, #ffffff 100%);
+background: -o-linear-gradient(top, #dcdcdc 0%, #dbdbdb 50%, #d1d1d1 51%, #ffffff 100%);
+background: -ms-linear-gradient(top, #dcdcdc 0%, #dbdbdb 50%, #d1d1d1 51%, #ffffff 100%);
+background: linear-gradient(top, #dcdcdc 0%, #dbdbdb 50%, #d1d1d1 51%, #ffffff 100%);
+}
+.footer{
+	background-color: #CCCCCC;
+}
