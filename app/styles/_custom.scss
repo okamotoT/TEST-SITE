@@ -1,3 +1,27 @@
+.header{
+	background-image: url(../images/test-site-logo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.header h1{
+	padding-left: 120px;
+	padding-top: 30px;
+}
+
+@mixin circle {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
 .back1{
+	@include circle;
 	background-color: #99CC00;
+}
+.contents{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.back2{
 }
