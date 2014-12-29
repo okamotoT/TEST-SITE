@@ -23,5 +23,17 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.back2{
+
+$default-theme-color: lighten(#ccc, 90);
+@mixin my-back($color) {
+	$dark-color: darken($color, 10);
+	padding: 20px;
+	background: linear-gradient($color, $dark-color);
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.back2 {
+@include my-back($default-theme-color);
+line-height: 200%;
 }
