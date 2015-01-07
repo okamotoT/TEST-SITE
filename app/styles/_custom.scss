@@ -24,7 +24,7 @@
 	margin-bottom: 10px;
 }
 
-$default-theme-color: lighten(#ccc, 90);
+$default-theme-color: lighten(#F4F4E8, 90);
 @mixin my-back($color) {
 	$dark-color: darken($color, 10);
 	padding: 20px;
@@ -36,4 +36,44 @@ $default-theme-color: lighten(#ccc, 90);
 .back2 {
 @include my-back($default-theme-color);
 line-height: 200%;
+}
+.category {
+	font-size: 1.5em;
+	padding-left: 20px;
+}
+.main-contents {
+	font-size: 1.5em;
+	padding-left: 20px;
+}
+#info {
+	width: 100%;
+	margin-bottom: 20px;
+	@include circle;
+	border: 1px solid #CCCCCC;
+}
+#info h3 {
+	font-size: 1.5em;
+	padding-left: 20px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+#info ul {
+	width: 90%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#info ul li {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
 }
