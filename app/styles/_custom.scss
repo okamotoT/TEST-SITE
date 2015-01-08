@@ -4,10 +4,13 @@
 	background-position: left top;
 }
 .header h1{
-	padding-left: 120px;
+	padding-left: 15%;
 	padding-top: 30px;
 }
-
+.h_img{
+	max-width: 323px;
+	float: right;
+}
 @mixin circle {
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
@@ -76,4 +79,16 @@ line-height: 200%;
 	border-bottom-width: 1px;
 	border-bottom-style: dotted;
 	border-bottom-color: #CCCCCC;
+}
+.ta_b1{
+	background-image: url(/images/titleback2.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 15px;
+	background-position: 5px;
+}
+.ta_b2{
+	background-image: url(/images/titleback1.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 15px;
+	background-position: 5px;
 }

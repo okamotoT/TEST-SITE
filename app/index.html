@@ -23,6 +23,7 @@
 
 <div class="container">
 	<div class="header">
+		<div class="h_img"><img src="images/head_img.png" width="323" ></div>
 		<h1 class="text-muted">TEST-SITE</h1>
 		<h2>TOP</h2>
 		<p>Yeomanについて学習</p>
@@ -39,7 +40,7 @@
 		<div class="col-md-9 col-md-push-3">
 			<div class="back">
 				<p>.col-md-9 .col-md-push-3</p>
-				<p>メイン<span class="main-contents">CONTENTS</span></p>
+				<p class="ta_b1">メイン<span class="main-contents">CONTENTS</span></p>
 				
 			</div>
 			<div id="info">
@@ -51,16 +52,41 @@
 				</ul>
 			</div>
 			<div class="back2">
-				<h3>詳細</h3>
-				<p>このページはBootstrapのComponentsのnavigation（Justified button groups）を設置しました。</p>
-				<p>このページはBootstrapのGlobal CSSでコンテンツを作成しました。</p>
-				<p>@mixin、@includeでコーナーを丸くしたり、背景色を設定しました。</p>
-				<button class="custom-btn">LINK</button>
+
+				<div role="tabpanel">
+				<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">詳細</a></li>
+						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Yeoman</a></li>
+						<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Git</a></li>
+						<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Bootstrap</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="home">
+						<p>このページはBootstrapのComponentsのnavigation（Justified button groups）を設置しました。</p>
+						<p>このページはBootstrapのGlobal CSSでコンテンツを作成しました。</p>
+						<p>@mixin、@includeでコーナーを丸くしたり、背景色を設定しました。</p>
+						<p>Togglable&nbsp;tabs(tab.js)を使用しました。</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="profile">
+							<p>Yeomanについて</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="messages">
+							<p>Gitについて</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="settings">
+							<p>Bootstrapについて</p>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 		<div class="col-md-3 col-md-pull-9 back1">
 			<p>.col-md-3 .col-md-pull-9</p>
-			<p>サイド<span class="category">CATEGORY</span></p>
+			<p class="ta_b2">サイド<span class="category">CATEGORY</span></p>
 			<p>テキスト</p>
 			<p>テキスト</p>
 			<p>テキスト</p>
@@ -70,12 +96,18 @@
 			<p>テキスト</p>
 			<p>テキスト</p>
 		</div>
-
+		<div class="col-md-3 col-md-pull-9">
+			<p>.col-md-3 .col-md-pull-9</p>
+				<table>
+					<tr><td><img src="images/yo.gif" alt=""></td><td><img src="images/grunt.gif" alt=""></td><td><img src="images/bower.gif" alt=""></td></tr>
+				</table>
+		</div>
 	</div>
 </div>
-      <div class="footer">
-        <p><img src="images/test-site.png" alt="TEST-SITE"></p>
-      </div>
+<div class="footer">
+	<p><img src="images/test-site.png" alt="TEST-SITE"></p>
+	<p>i-collaboration Kobe</p>
+</div>
 
 </div>
 
