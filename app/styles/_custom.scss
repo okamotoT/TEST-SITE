@@ -26,7 +26,6 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
 $default-theme-color: lighten(#F4F4E8, 90);
 @mixin my-back($color) {
 	$dark-color: darken($color, 10);

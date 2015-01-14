@@ -34,7 +34,8 @@
 <a class="btn btn-primary" role="button" href="#">BLANK</a>
 <a class="btn btn-primary" role="button" href="#">BLANK</a>
 <a class="btn btn-primary" role="button" href="#">BLANK</a>
-<a class="btn btn-primary" role="button" href="#">BLANK</a></div>
+<a class="btn btn-primary" role="button" href="#">BLANK</a>
+</div>
 <div class="contents">
 	<div class="row">
 		<div class="col-md-9 col-md-push-3">
@@ -65,14 +66,42 @@
 					<!-- Tab panes -->
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane active" id="home">
-						<p>このページはBootstrapのComponentsのnavigation（Justified button groups）を設置しました。</p>
+						<p>このページのNAVはBootstrapのComponentsのclass="btn-group btn-group-justified"を設置しました。</p>
+<pre>&lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+...
+&lt;/div&gt;
+</pre>
+
 						<p>このページはBootstrapのGlobal CSSでコンテンツを作成しました。</p>
 						<p>@mixin、@includeでコーナーを丸くしたり、背景色を設定しました。</p>
 						<p>Togglable&nbsp;tabs(tab.js)を使用しました。</p>
 						</div>
 						<div role="tabpanel" class="tab-pane" id="profile">
-							<p>Yeomanについて</p>
-						</div>
+							<h3>Yeoman環境設定</h3>
+<p><span>参考サイト</span><a href="http://qiita.com/Syn/items/f700b325e07222b64960">http://qiita.com/Syn/items/f700b325e07222b64960</a></p>
+<h4>準備</h4>
+<h5>①Node.js インストール</h5>
+<p>Yeoman は Node.js 上で動くので、 Node.js をインストールしておく。</p>
+<h6>ダウンロード</h6>
+<p><a href="http://nodejs.org/download/">http://nodejs.org/download/</a></p>
+<h6>インストール</h6>
+<div>
+<p>node-v0.10.35-x86.msiを実行</p>
+<p>デフォルトのインストール要件でインストール</p>
+<p>npm も同時にインストールされる</p>
+<p>再起動</p>
+<p>コマンド プロンプトでインストール結果確認</p>
+</div>
+<div>
+Node –v
+10.35
+Npm –v
+1.4.28
+</div>
+
+<h5>②Ruby インストール</h5>
+
+					  </div>
 						<div role="tabpanel" class="tab-pane" id="messages">
 							<p>Gitについて</p>
 						</div>
@@ -98,9 +127,11 @@
 		</div>
 		<div class="col-md-3 col-md-pull-9">
 			<p>.col-md-3 .col-md-pull-9</p>
-				<table>
-					<tr><td><img src="images/yo.gif" alt=""></td><td><img src="images/grunt.gif" alt=""></td><td><img src="images/bower.gif" alt=""></td></tr>
-				</table>
+			<div class="box">
+				<img src="images/yo.gif" alt="">
+				<img src="images/grunt.gif" alt="">
+				<img src="images/bower.gif" alt="">
+			</div>
 		</div>
 	</div>
 </div>
