@@ -67,43 +67,167 @@
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane active" id="home">
 						<p>このページのNAVはBootstrapのComponentsのclass="btn-group btn-group-justified"を設置しました。</p>
-<pre>&lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
-...
-&lt;/div&gt;
-</pre>
+						<pre>&lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;/div&gt;</pre>
 
 						<p>このページはBootstrapのGlobal CSSでコンテンツを作成しました。</p>
 						<p>@mixin、@includeでコーナーを丸くしたり、背景色を設定しました。</p>
 						<p>Togglable&nbsp;tabs(tab.js)を使用しました。</p>
+<pre><span class="go">&lt;div role=&quot;tabpanel&quot;&gt;</span>
+
+<span class="go">  &lt;!-- Nav tabs --&gt;</span>
+<span class="go">  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;</span>
+<span class="go">    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; aria-controls=&quot;home&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</span>
+<span class="go">    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#profile&quot; aria-controls=&quot;profile&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;</span>
+<span class="go">    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages&quot; aria-controls=&quot;messages&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;</span>
+<span class="go">    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#settings&quot; aria-controls=&quot;settings&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;</span>
+<span class="go">  &lt;/ul&gt;</span>
+
+<span class="go">  &lt;!-- Tab panes --&gt;</span>
+<span class="go">  &lt;div class=&quot;tab-content&quot;&gt;</span>
+<span class="go">    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;home&quot;&gt;...&lt;/div&gt;</span>
+<span class="go">    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;profile&quot;&gt;...&lt;/div&gt;</span>
+<span class="go">    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;messages&quot;&gt;...&lt;/div&gt;</span>
+<span class="go">    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;settings&quot;&gt;...&lt;/div&gt;</span>
+<span class="go">  &lt;/div&gt;</span>
+
+<span class="go">&lt;/div&gt;</span>
+</pre>
+
 						</div>
 						<div role="tabpanel" class="tab-pane" id="profile">
 							<h3>Yeoman環境設定</h3>
-<p><span>参考サイト</span><a href="http://qiita.com/Syn/items/f700b325e07222b64960">http://qiita.com/Syn/items/f700b325e07222b64960</a></p>
-<h4>準備</h4>
-<h5>①Node.js インストール</h5>
-<p>Yeoman は Node.js 上で動くので、 Node.js をインストールしておく。</p>
-<h6>ダウンロード</h6>
-<p><a href="http://nodejs.org/download/">http://nodejs.org/download/</a></p>
-<h6>インストール</h6>
-<div>
-<p>node-v0.10.35-x86.msiを実行</p>
-<p>デフォルトのインストール要件でインストール</p>
-<p>npm も同時にインストールされる</p>
-<p>再起動</p>
-<p>コマンド プロンプトでインストール結果確認</p>
-</div>
-<div>
+							<p><span>参考サイト</span><a href="http://qiita.com/Syn/items/f700b325e07222b64960">http://qiita.com/Syn/items/f700b325e07222b64960</a></p>
+							<h4>準備</h4>
+							<h5>①Node.js インストール</h5>
+							<p>Yeoman は Node.js 上で動くので、 Node.js をインストールしておく。</p>
+							<h6>ダウンロード</h6>
+							<p><a href="http://nodejs.org/download/">http://nodejs.org/download/</a></p>
+							<h6>インストール</h6>
+								<div>
+									<p>node-v0.10.35-x86.msiを実行</p>
+									<p>デフォルトのインストール要件でインストール</p>
+									<p>npm も同時にインストールされる</p>
+									<p class="restart">再起動</p>
+									<p>コマンド プロンプトでインストール結果確認</p>
+								</div>
+								<div>
+<pre>
 Node –v
 10.35
 Npm –v
 1.4.28
-</div>
+</pre>
+								</div>
+							<h5>②Ruby インストール</h5>
+							<p>ひな形に含まれる SCSS をコンパイルするのに Compass が必要。</p>
+							<p>Compass は Ruby で書かれたアプリなので、 Ruby をインストールしておく</p>
+							<h6>ダウンロード</h6>
+							<p><a href="http://rubyinstaller.org/downloads/">http://rubyinstaller.org/downloads/</a></p>
+							<p>最新版 rubyinstaller-2.1.5 .exe をダウンロード</p>
+							<h6>インストール</h6>
+							<p>「インストール先とオプションの指定」画面で、「Ruby の実行ファイルに環境変数 PATH を設定する」にチェックを入れる</p>
+							<p>他はデフォルトのインストール要件でインストール</p>
+							<p>参考サイト　<a href="http://www.rubylife.jp/install/install/index1.html#section2">http://www.rubylife.jp/install/install/index1.html#section2</a></p>
+								<div>
+<pre>
+ruby –v
+ruby 2.1.5p273 (2014-11-13 revision 48405) [i386-mingw32]
+gem –v
+2.2.2
+</pre>
+								</div>
+							<p class="restart">再起動</p>
+							<h5>③Bundler, Compass インストール</h5>
+							<p>gem を最新版に更新し、 Bundler と Compass をインストールする</p>
+								<div>
+<pre>
+gem update –system
+gem install bundler
+gem install compass
+</pre>
+								</div>
+							<p>ここでおそらくエラーが出ると思いますので下記サイト参照して、下記手順を行う。</p>
+							<p>参照　<a href="http://qiita.com/shimoju/items/394818b4989b94680aaf">http://qiita.com/shimoju/items/394818b4989b94680aaf</a></p>
+								<div>
+									<p>手順</p>
+									<p>1. 新しい証明書ファイルをダウンロードする</p>
+									<p><a href="https://gist.github.com/luislavena/f064211759ee0f806c88#step-1-obtain-the-new-trust-certificate">Step 1: Obtain the new trust certificate</a>から、「AddTrustExternalCARoot-2048.pem」を右クリックし名前を付けて保存でダウンロードする。</p>
+									<p>.pemという拡張子でなければならないので、きちんとこの拡張子でダウンロードされているか確認する。</p>
+									<p>2. RubyGemsがあるフォルダに移動するC:/Ruby21/lib/ruby/2.1.0/rubygemsに移動する</p>
+									<p>3. ダウンロードした証明書ファイルをコピーする</p>
+									<p>移動したフォルダにssl_certsフォルダがあるので、ダウンロードした「AddTrustExternalCARoot-2048.pem」をそこにコピーする。</p>
+									<p>４．コピーできれば、コマンド　プロンプトで、③Bundler, Compass をインストールする。</p>
+								</div>
+							<h5>④Git インストール</h5>
+							<p>Bower を使用するのに Git が必要なので、 Git for Windows をインストールしておく。</p>
+							<h6>ダウンロード</h6>
+							<p><a href="http://msysgit.github.io/">http://msysgit.github.io/</a></p>
+							<p>最新版 Git-1.9.5-preview20141217.exeをダウンロード</p>
+							<h6>インストール</h6>
+							<p>参照：<a href="http://codezine.jp/article/detail/7077?p=2">http://codezine.jp/article/detail/7077?p=2</a></p>
+							<p>インストール途中 “Adjusting your PATH environment” の画面でコマンドライン使用について聞いてくるので、 “Use Git from the Windows Command Prompt” を選択する</p>
+							<p>他はデフォルトのインストール要件でインストール</p>
+							<p class="restart">再起動</p>
+								<div>
+<pre>
+git  --version
+git version 1.9.5.msysgit.0
+</pre>
+								</div>
+							<h5>⑤Yeoman インストール</h5>
+							<p>npmを使用してyo, grunt, bowerをインストールする。</p>
+<pre>
+npm install -g yo grunt-cli bower
+</pre>
+							<p>コマンド　プロンプトで、ディレクトリ作成</p>
+<pre>
+cd c:\
+mkdir project & cd project
+</pre>
+							<p>これで、ｃ直下にprojectホルダーができる。</p>
+							<p>次に、GITのコマンドプロンプトで、Yeomanをwebappする。</p>
+<pre>
+cd c:\project
+npm install -g generator-webapp
+yo webapp
+npm install
+grunt serve
+</pre>
+							<p>以上で、Yeomanの環境が完了します。</p>
 
-<h5>②Ruby インストール</h5>
-
-					  </div>
+					</div>
 						<div role="tabpanel" class="tab-pane" id="messages">
-							<p>Gitについて</p>
+							<h3>Git　Hubで共有作業</h3>
+							<h4>①まずは、各自でGitアカウントをもつ。</h4>
+
+							<h4>②新しいリポジトリを作成する。</h4>
+							<p>親の作業</p>
+							<p>git init</p>
+							<p>git add .</p>
+							<p>git status</p>
+							<p>git commit -a -m"first commit"</p>
+							<p>git status</p>
+							<h4>③github.comにサインインして、メニューバーの＋▼からNew repositoryを選ぶ</h4>
+							<p>例　https://github.com/okamotoT</p>
+							<p>・Repository name　作成</p>
+							<p>・New collaboratar　登録（メンバー：ユーザー名）</p>
+							<p>子の作業</p>
+							<p>例</p>
+							<p>cd c:\</p>
+							<p>git clone https://github.com/okamotoT/TEST-SITE.git</p>
+							<p>・HTTPS clone URL</p>
+							<p>cd c:\TEST-SITE\</p>
+							<p>npm install && bower install</p>
+							<p>git status</p>
+							<p>grunt serve/ブラウザー確認</p>
+							<P>***************************************</P>
+							<p>作業後(メンバー）</p>
+							<p>git add .</p>
+							<p>git status</p>
+							<p>git pull</p>
+							<p>git commit -a -m"修正内容"</p>
+							<p>git push origin master</p>
+
 						</div>
 						<div role="tabpanel" class="tab-pane" id="settings">
 							<p>Bootstrapについて</p>
