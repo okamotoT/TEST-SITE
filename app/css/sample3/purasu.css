@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.box_info {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
+}
+.box_info h2 {
+	font-size: 1.5em;
+	padding-top: 0px;
+}

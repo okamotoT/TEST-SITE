@@ -70,25 +70,26 @@
 						<p>このページはBootstrapのGlobal CSSでコンテンツを作成しました。</p>
 						<p>@mixin、@includeでコーナーを丸くしたり、背景色を設定しました。</p>
 						<p>Togglable&nbsp;tabs(tab.js)を使用しました。</p>
-<pre><span class="go">&lt;div role=&quot;tabpanel&quot;&gt;</span>
+<pre>
+&lt;div role=&quot;tabpanel&quot;&gt;
 
-<span class="go">  &lt;!-- Nav tabs --&gt;</span>
-<span class="go">  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;</span>
-<span class="go">    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; aria-controls=&quot;home&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</span>
-<span class="go">    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#profile&quot; aria-controls=&quot;profile&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;</span>
-<span class="go">    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages&quot; aria-controls=&quot;messages&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;</span>
-<span class="go">    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#settings&quot; aria-controls=&quot;settings&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;</span>
-<span class="go">  &lt;/ul&gt;</span>
+  &lt;!-- Nav tabs --&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; aria-controls=&quot;home&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#profile&quot; aria-controls=&quot;profile&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+   &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages&quot; aria-controls=&quot;messages&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+   &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#settings&quot; aria-controls=&quot;settings&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 
-<span class="go">  &lt;!-- Tab panes --&gt;</span>
-<span class="go">  &lt;div class=&quot;tab-content&quot;&gt;</span>
-<span class="go">    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;home&quot;&gt;...&lt;/div&gt;</span>
-<span class="go">    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;profile&quot;&gt;...&lt;/div&gt;</span>
-<span class="go">    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;messages&quot;&gt;...&lt;/div&gt;</span>
-<span class="go">    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;settings&quot;&gt;...&lt;/div&gt;</span>
-<span class="go">  &lt;/div&gt;</span>
+  &lt;!-- Tab panes --&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;home&quot;&gt;...&lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;profile&quot;&gt;...&lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;messages&quot;&gt;...&lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;settings&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
 
-<span class="go">&lt;/div&gt;</span>
+&lt;/div&gt;
 </pre>
 
 						</div>
@@ -188,7 +189,7 @@ mkdir project & cd project
 cd c:\project
 npm install -g generator-webapp
 yo webapp
-npm install
+npm install && bower install
 grunt serve
 </pre>
 							<p>以上で、Yeomanの環境が完了します。</p>
@@ -238,8 +239,15 @@ grunt serve
 		</div>
 		<div class="col-md-3 col-md-pull-9 back1">
 			<p>.col-md-3 .col-md-pull-9</p>
-			<p class="ta_b2">サイド<span class="category">CATEGORY</span></p>
-			<p>テキスト</p>
+			<p class="ta_b2">サイド<span class="category">CATEGORY</span></p>		
+				<div class="alert alert-warning" role="alert">
+					<p>サンプルページの作成</p>
+						<ul class="nav nav-pills nav-stacked">
+							<li role="presentation"><a href="sample1.html">sample1</a></li>
+							<li role="presentation"><a href="sample2.html">sample2</a></li>
+							<li role="presentation"><a href="sample3.html">sample3</a></li>
+						</ul>
+				</div>
 			<p>テキスト</p>
 			<p>テキスト</p>
 			<p>テキスト</p>

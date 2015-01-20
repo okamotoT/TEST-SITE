@@ -16,7 +16,9 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
+header{
+	padding-top: 50px;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .contents,
@@ -57,7 +59,10 @@ nav,
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
+header{
+	padding-top: 50px;
+}
+.container {
     max-width: 100%;
   }
 
@@ -79,7 +84,10 @@ nav,
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+ header{
+	padding-top: 50px;
+}
+.container {
     max-width: 100%;
   }
 

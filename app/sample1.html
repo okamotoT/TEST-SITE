@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap, from Twitter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<!-- Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.1/css/bootstrap-combined.min.css">
+		<link rel="stylesheet" type="text/css" href="css/sample1/jquery.sidr.dark.css">
+		<style type="text/css">
+			.navbar .container .btn.btn-navbar {
+				float: left !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="brand">Project name</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="active"><a>Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a>Action</a></li>
+									<li><a>Another action</a></li>
+									<li><a>Something else here</a></li>
+									<li class="divider"></li>
+									<li class="nav-header">Nav header</li>
+									<li><a>Separated link</a></li>
+									<li><a>One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<!-- Main hero unit for a primary marketing message or call to action -->
+			<div class="hero-unit">
+				<h1>レシポンシブ</h1>
+			</div>
+
+			<!-- Example row of columns -->
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<h2>Sample1</h2>
+					<p>ブラウザの幅を992px未満にするとメニューボタンが表示されます。 </p>
+					<p>メニューボタンをクリックするとサイドメニューで表示されます。</p>
+					<p><a href="index.html" class="btn">戻る</a></p>
+				</div>
+				
+			</div>
+
+			<hr>
+
+			<footer>
+				<p>&copy; Company 2013</p>
+			</footer>
+		</div><!--/ Contents Wrap -->
+		<!-- JavaScript -->
+		<script type="text/javascript" charset="UTF-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="js/sample1/jquery.sidr.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+		$(document).ready(function() {
+			$('.navbar .container .btn.btn-navbar')
+				.attr('data-toggle', '')
+				.attr('data-target', '')
+				.sidr({
+					source: '.navbar .container .nav-collapse.collapse'
+			});
+		});
+		</script>
+
+	</body>
+</html>
