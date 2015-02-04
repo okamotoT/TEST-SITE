@@ -51,7 +51,7 @@ function initSideMenu() {
 	$('#sidr .sidr-inner #sidr-id-headerNaviMenu').removeAttr('id').removeAttr('class');
 
 	$('#sidr .sidr-inner').prepend('<p>Main Menu</p>');
-	$('#sidr .sidr-inner').prepend('<h3>i-coraboration</h3>');
+	$('#sidr .sidr-inner').prepend('<h3>i-collaboration</h3>');
 
 	$('#sidr .sidr-inner').append('<p>Sub Menu</p>');
 	$('#sidr .sidr-inner').append($('#footerNaviMenu').clone().removeAttr('id'));
