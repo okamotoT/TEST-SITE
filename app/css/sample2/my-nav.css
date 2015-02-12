@@ -17,11 +17,11 @@ border-bottom: 1px solid #eee;
 }
 
 .navbar-origin .navbar-nav>li>a {
-padding-top: 0;
-padding-bottom: 0;
-line-height: 40px;
-font-weight: 200;
-color: #FFF;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 40px;
+	font-weight: 200;
+	color: #000000;
 }
 .navbar-origin .navbar-nav>li>a:hover{
 color: #E42121;

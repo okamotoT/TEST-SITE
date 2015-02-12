@@ -71,6 +71,7 @@ footer{
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+
 header{
 	padding-top: 50px;
 }
@@ -116,6 +117,18 @@ header{
   .header {
     margin-bottom: 10px;
   }
+/*sample2*********************************/
+header{
+	padding-bottom: 50px;
+	border-bottom:solid 1px #3399FF;
+}
+
+footer{
+	padding-bottom: 50px;
+	border-top:solid 1px #3399FF;
+}
+/*****************************************/
+
 }
 .box img{
 	float: left;
