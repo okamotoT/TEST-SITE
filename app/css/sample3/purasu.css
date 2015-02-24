@@ -21,3 +21,9 @@
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
+body {
+	background-attachment: fixed;
+	background-image: url(../../img/back.png);
+	background-repeat: repeat;
+	background-position: left center;
+}
