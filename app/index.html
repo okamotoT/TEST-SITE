@@ -59,6 +59,7 @@
 						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Yeoman</a></li>
 						<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Git</a></li>
 						<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Bootstrap</a></li>
+						<li role="presentation"><a href="#bower" aria-controls="settings" role="tab" data-toggle="tab">bower</a></li>
 					</ul>
 
 					<!-- Tab panes -->
@@ -240,6 +241,21 @@ grunt serve
 							<p>Bootstrapについて</p>
 							<p><a href="http://getbootstrap.com/css/" target="_blank">http://getbootstrap.com/css/</a></p>
 							<p><a href="http://designup.jp/category/template-custom/tpl-bootstrap/" target="_blank">http://designup.jp/category/template-custom/tpl-bootstrap/</a></p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="bower">
+							<h3>bower</h3>
+							<p>Gitコマンドプロンプトで、bowerにJavaScriptをインストールできる。(<a href="http://bower.io/">http://bower.io/</a>)</p>
+							<p>Search&nbsp;bower&nbsp;packeges&nbsp;&nbsp;<a href="http://bower.io/search/">http://bower.io/search/</a>でJSを調べることができる。</p>
+							<h4>ARC TEXT.JS</h4>
+								<pre>bower search arctext</pre>
+								<pre>bower install arctext-js --save</pre>
+								<p>--saveをつけること</p>
+								<pre>grunt serve</pre>
+								<p><span class="text-danger">&lt;script&gt;</span>がindex.htmlに追加される。</p>
+								<p>scriptsホルダーのmain.jsにソースを書き込む</p>
+								<pre>$('h1').arctext({radius:300});</pre>
+								<p>ロゴのようになる</p>
+
 						</div>
 					</div>
 				</div>
