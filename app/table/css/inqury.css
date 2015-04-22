@@ -1,0 +1,224 @@
+.container {
+	max-width: 840px;
+	padding-left:0%;
+	padding-right:0.5%;
+	margin-top: 0%;
+	padding-top: 0%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#contents {
+	max-width: 840px;
+	display: block;
+	clear: both;
+	position: relative;
+	margin-top: 2%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #0099FF;
+	border-right-color: #0099FF;
+	border-bottom-color: #0099FF;
+	border-left-color: #0099FF;
+}
+.red {
+	color: #FF0000;
+}
+
+
+.clearfix:after {
+	content: ""; 
+	display: block; 
+	clear: both;
+}
+
+
+/*=================================*/
+/*↓お問い合せ↓*/
+/*=================================*/
+.mail_title p {
+	margin-top: 10px;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-bottom: 20px;
+}
+.inquiry_ul {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.mail_title li {
+	margin-bottom: 5px;
+	margin-left: 1%;
+	margin-right: 10px;
+}
+.mail_navi p {
+	margin-bottom: 5px;
+	margin-left: 5%;
+	margin-right: 10px;
+}
+
+.inquiry_con {
+	max-width: 800px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-size:1.1em;
+	border: 1px solid #FF9900;
+}
+.inquiry_check {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.inquiry_sousin {
+	text-align: center;
+}
+
+form,input,textarea {
+	margin: 0;
+	padding: 0;
+}
+
+#table{
+	max-width: 590px;
+	border-collapse: collapse;
+}
+#table td,
+#table th{
+	padding: 5px;
+	border:none;
+}
+#table th{
+	font-weight: bold;
+	vertical-align:top;
+	text-align:left;
+}
+#table thead th{
+	background:#e6e6e6;
+}
+#table thead{
+	display: none;
+	visibility:hidden;
+}
+
+@media only screen and (max-width:481px){
+.container {
+	max-width: 840px;
+	padding-left:0%;
+	padding-right:0.5%;
+	margin-top: 0%;
+	padding-top: 0%;
+}
+#contents {
+	max-width: 840px;
+}
+
+#table{
+	display: block;
+}
+#table thead{
+	display: none;
+}
+#table thead th{
+	visibility:hidden;
+}
+#table tbody{
+	display: block;
+}
+#table tbody tr{
+	display: block;
+	margin-bottom:10px;
+}
+#table tbody th,
+#table tbody td{
+	display: list-item;
+	list-style-type:none;
+	border: none;
+}
+#table tbody th{
+	margin-bottom: 5px;
+	list-style-type: none;
+	color: #000;
+	background: #e6e6e6;
+	margin-right:1%;
+}
+#table tbody td{
+	margin-left: 1%;
+	padding: 0;
+}
+
+}
+@media screen and (min-width : 769px) {
+.container {
+	max-width: 840px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#contents {
+	max-width: 100%;
+}
+#contents {
+	max-width: 840px;
+	padding-bottom: 15px;
+	margin-top: 34px;
+}
+
+
+/*==↓お問い合せ===========↓*/
+.mail_title p {
+	margin-top: 10px;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-bottom: 20px;
+}
+.inquiry_ul {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.mail_title li {
+	margin-bottom: 5px;
+	margin-left: 3%;
+	margin-right: 10px;
+}
+.mail_navi p {
+	margin-bottom: 5px;
+	margin-left: 3%;
+	margin-right: 10px;
+}
+
+.inquiry_con {
+	width: 800px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.inquiry_check {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.inquiry_sousin {
+	text-align: center;
+}
+.inquiry_con table {
+	max-width: 590px;
+	margin-left:5%;
+	margin-right:5%;
+}
+#table th{
+	font-weight:normal;
+	vertical-align:top;
+	text-align:left;
+	width:145px;
+}
+
+/*==↑お問合せ↑=======*/
+
+}
+
+/*ここまでお問い合せ*/
