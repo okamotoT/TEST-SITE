@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass-official": "~3.2.0",
-    "arctext-js": "*"
+    "arctext-js": "*",
+    "jquery": "~2.1.3"
   }
 }
