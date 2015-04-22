@@ -131,10 +131,16 @@ npmを使用してyo, grunt, bowerをインストールする。
     npm install -g generator-webapp
     yo webapp
     npm install && bower install
-    grunt serve
 
 ##以上で、Yeomanの環境が完了します。
 なお、このサイトをgrunt serveするには、以下が必要です。
 
     bower install arctext-js --save
+    npm install --save imagemin-jpegtran
+    npm install --save grunt-contrib-uglify
+    npm install --save grunt-mocha
+    npm install --save grunt-usemin
+    npm install --save grunt-wiredep
 
+
+    grunt serve
