@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+.table {
+	border-collapse: separate;
+	border-spacing: 0;
+	font-size: 85%;
+	margin-bottom: 20px;
+	width: 100%;
+	background-color: #F3F3F3;
+}
+.table thead tr th,
+.table thead tr td {
+	font-weight: normal;
+	letter-spacing: .001em;
+	line-height: 14px;
+	padding: 10px 10px 5px 5px;
+	text-align: right;
+	vertical-align: bottom;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+}
+.table thead tr th:first-child,
+.table thead tr td:first-child {
+  padding-right: 0;
+  text-align: left;
+}
+.table thead tr th:last-child,
+.table thead tr td:last-child {
+}
+.table tbody tr {
+  border: 1px solid #fdfdfd;
+}
+.table tbody tr th,
+.table tbody tr td {
+	font-weight: normal;
+	padding: 4px 10px;
+	text-align: right;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #cccccc;
+	border-bottom-color: #cccccc;
+}
+.table tbody tr th:first-child,
+.table tbody tr td:first-child {
+  text-align: left;
+}
+.table tbody tr th:last-child,
+.table tbody tr td:last-child {
+  border-right-color: #CCC;
+}
+.table thead tr th:last-child {
+  border-right-color: #CCC;
+}
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+caption{
+	text-align: left;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #F00;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	font-size: 1.2em;
+}
+.metalworking3 th {
+	background-color: #E6E6E6;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+.table-responsive thead,
+.table-responsive tbody,
+.table-responsive th,
+.table-responsive td,
+.table-responsive tr {
+    display: block;
+  }
+.table-responsive thead {
+    display: none;
+  }
+.table-responsive tbody tr {
+    border-top: 1px solid #cccccc;
+  }
+.table-responsive tbody tr td {
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+    padding-left: 40%;
+    text-align: left;
+    border-right: 1px solid #cccccc;
+  }
+.table-responsive tbody tr td:before {
+    color: #555;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 20%;
+    padding-right: 15%;
+    white-space: nowrap;
+    border-right: 1px dotted #cccccc;
+
+  }
+.table-responsive tbody tr td:nth-of-type(1):before {
+    content: "機械名";
+  }
+.table-responsive tbody tr td:nth-of-type(2):before {
+    content: "形式";
+  }
+.table-responsive tbody tr td:nth-of-type(3):before {
+    content: "台数";
+  }
+.table-responsive tbody tr td:nth-of-type(4):before {
+    content: "メーカー";
+  }
+.table-responsive tbody tr td:nth-of-type(5):before {
+    content: "加工能力";
+  }
+.table-responsive tbody tr td:nth-of-type(6):before {
+    content: "備考";
+  }
+}
