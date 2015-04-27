@@ -59,7 +59,8 @@
 						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Yeoman</a></li>
 						<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Git</a></li>
 						<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Bootstrap</a></li>
-						<li role="presentation"><a href="#bower" aria-controls="settings" role="tab" data-toggle="tab">bower</a></li>
+						<li role="presentation"><a href="#bower" aria-controls="bower" role="tab" data-toggle="tab">bower</a></li>
+						<li role="presentation"><a href="#css" aria-controls="css" role="tab" data-toggle="tab">css</a></li>
 					</ul>
 
 					<!-- Tab panes -->
@@ -255,7 +256,45 @@ grunt serve
 								<p>scriptsホルダーのmain.jsにソースを書き込む</p>
 								<pre>$('h1').arctext({radius:300});</pre>
 								<p>ロゴのようになる</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="css">
+							<h3>css役に立つ！</h3>
+							<h4>imgをレシポンス</h4>
+<pre>
+/* css */
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+/* html */
+&lt;img src="photo.jpg" class="img-responsive"&gt;
+</pre>
+							<h4>imgタグ</h4>
+<pre>
+img {
+	max-width: 100%;
+	height: auto;
+}
+</pre>
+
+							<h4>clearfix</h4>
+							<p>フロート解除</p>
+<pre>!-- Usage as a class --
+&lt;div class="clearfix"&gt;...&lt;/div&gt;
+</pre>
+<pre>
+.clearfix{
+    display:block;
+}
+
+.clearfix:after {
+	content: ""; 
+	display: block; 
+	clear: both;
+}
+</pre>
 						</div>
 					</div>
 				</div>
