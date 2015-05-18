@@ -15,29 +15,32 @@ body {
 }
 
 header {
-	width:100%;
+	width:98%;
 	display: block;
-	float: left;
 	background-color: #000;
 	border: 1px solid #930;
 	margin-bottom: 2%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #main{
-	width: 100%;
+	width: 98%;
 	display: block;
-	float: left;
 	border: 1px solid #930;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
 }
 #main2{
-	width: 100%;
+	width: 98%;
 	display: block;
-	float: right;
 	border: 1px solid #930;
 	margin-bottom: 2%;
+	margin-left:auto;
+	margin-right:auto;
 }
 #main2 .box_f_l{
-	float: left;
 	width: 100%;
 	display: block;
 	padding-right: 2%;
@@ -47,11 +50,10 @@ header {
 #side{
 	width: 100%;
 	display: block;
-	float: right;
 	border: 1px solid #930;
 }
 
-ooter {
+footer {
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 19px;
@@ -83,16 +85,12 @@ ooter {
 	margin-left: 2%;
 	padding: 0px;
 }
-
+.fb-like-box,.fb-like-box span, .fb-like-box iframe {
+	width: 100% !important;
+}
 @media screen and (min-width: 600px) {
 .container {
 	max-width: 593px;
-}
-header {
-	width:25%;
-	display: block;
-	float: left;
-	border: 1px solid #930;
 }
 header {
 	width:27%;
@@ -101,40 +99,55 @@ header {
 	border: 1px solid #930;
 	margin-right:1%;
 }
-#main{
+.maxwidth{
+	width:60%;
+	hight:auto;
+}
+.con{
 	width: 72%;
+	float: right;
+	display: block;
+}
+#main{
+	width: 100%;
 	display: block;
 	float: left;
 	border: 1px solid #930;
+	margin-bottom:20px;
 }
 #main2{
-	width: 72%;
+	width: 100%;
 	display: block;
-	float: right;
+	float: left;
 	padding-right: 0%;
 	padding-left: 0%;
 	border: 1px solid #930;
-	margin-left:1%;
+	margin-left:0%;
+	margin-bottom:10px;
 }
 #main2 .box_f_l{
 	float: left;
-	width: 54%;
+	width: 100%;
 	display: block;
-	padding-right: 2%;
+	padding-right: 0%;
 	padding-left: 0%;
+	padding-bottom:20px;
 }
 #main2 .box_f_r{
 	float: left;
-	width: 46%;
+	width: 98%;
 	display: block;
-	overflow: hidden;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:20px;
 }
 
 #side{
 	width: 27%;
 	display: block;
-	float: right;
+	float: left;
 	border: 1px solid #930;
+	margin-right:1%;
 }
 
 footer {
@@ -147,7 +160,9 @@ footer {
 .s2{
 	background-color: #2FC703;
 }
-
+.fb-like-box,.fb-like-box span, .fb-like-box iframe {
+	width: 100% !important;
+}
 }
 @media screen and (min-width: 900px) {
 .container {
@@ -160,20 +175,29 @@ header {
 	border: 1px solid #930;
 	margin-right:1%;
 }
-#main{
+.maxwidth{
+	width:100%;
+	hight:auto;
+}
+.con{
 	width: 72%;
+	float: right;
 	display: block;
-	float: left;
+}
+#main{
+	width: 100%;
+	display: block;
 	border: 1px solid #930;
+	margin-bottom:45px;
+	float: left;
 }
 #main2{
-	width: 72%;
+	max-width: 100%;
 	display: block;
-	float: right;
+	float: left;
 	padding-right: 0%;
 	padding-left: 0%;
 	border: 1px solid #930;
-	margin-left:1%;
 }
 #main2 .box_f_l{
 	float: left;
@@ -191,8 +215,9 @@ header {
 #side{
 	width: 27%;
 	display: block;
-	float: right;
+	float: left;
 	border: 1px solid #930;
+	margin-right:1%;
 }
 
 footer {
@@ -205,5 +230,7 @@ footer {
 .s2{
 	background-color: #2FC703;
 }
-
+.fb-like-box,.fb-like-box span, .fb-like-box iframe {
+	width: 100% !important;
+}
 }
